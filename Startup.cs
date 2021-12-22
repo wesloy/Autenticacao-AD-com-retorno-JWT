@@ -85,13 +85,13 @@ namespace SI_MicroServicos
                     {
                         Title = "SI MicroServicos",
                         Version = "v1",
-                        Description = "API para autenticação no domínio Algar, usando as credenciais do AD." +
+                        Description = "API para autenticação no domínio de uma empresa, usando as credenciais do AD." +
                                         "Salvando log de quando e qual ferramenta solicitante, para devidas auditorias futuras.",
                         Contact = new OpenApiContact
                         {
-                            Name = "Segurança da Informação Algartech",
-                            Email = "si@algartech.com",
-                            Url = new Uri("https://algartech.com")
+                            Name = "Autenticação",
+                            Email = "nome@email.com",
+                            Url = new Uri("https://site.com")
                         }
                     });
                 //Apontando o caminho do XML do Swagger
@@ -122,7 +122,7 @@ namespace SI_MicroServicos
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "SI MicroServicos");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Auth AD Micro Servico");
 
             });
 

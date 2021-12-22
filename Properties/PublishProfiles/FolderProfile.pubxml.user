@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Esse arquivo é usado pelo processo de publicação/pacote do seu projeto Web. É possível personalizar o comportamento deste processo
+ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_NewBackgroundProfile>True</_NewBackgroundProfile>
+    <_PublishTargetUrl>H:\TI Corporativa\07 - SGSI\51 - Sentinella\API - joao\SI_MicroServicos v4-5.0\SI_MicroServicos\bin\Release\PublishOutput</_PublishTargetUrl>
+    <History>True|2021-03-12T14:01:51.3255821Z;True|2021-03-12T09:47:11.6269933-03:00;</History>
+  </PropertyGroup>
+</Project>

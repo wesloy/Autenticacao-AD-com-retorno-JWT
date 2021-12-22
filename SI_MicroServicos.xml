@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SI_MicroServicos</name>
+    </assembly>
+    <members>
+        <member name="T:SI_MicroServicos.Controllers.AuthController">
+            <summary>
+            Auth tem como objetivo ser um serviço de retorno de token
+            a partir de credencias do AD (Active Directory) válidas.
+            Os parâmetros necessários para obter um token é:
+            - Usuário de rede Algar
+            - Senha, que não é salva dentro deste serviço de autenticação.
+            - Sistema que está solicitando a autenticação
+            </summary>
+        </member>
+        <member name="M:SI_MicroServicos.Controllers.AuthController.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Auth controller
+            </summary>
+        </member>
+        <member name="M:SI_MicroServicos.Controllers.AuthController.Auth(SI_MicroServicos.Model.UserAuth)">
+            <summary>
+            Autenticar usuário no sistema, utilizando credencias do AD.
+            </summary>
+            <param name="detailsLogin"></param>
+            <returns>
+            Este método log todas as solicitações de autenticação feitas a ele.
+            </returns>
+        </member>
+        <member name="P:SI_MicroServicos.Model.UserAuth.User">
+            <summary>
+            Usuario do AD
+            </summary>
+            <example>fulanodetal</example>
+        </member>
+        <member name="P:SI_MicroServicos.Model.UserAuth.Password">
+            <summary>
+            Senha do AD
+            </summary>
+            <example>123@Algar</example>
+            <remarks> Esta senha nao fica salva no SI Micro Servicos</remarks>
+        </member>
+        <member name="P:SI_MicroServicos.Model.UserAuth.Sistema">
+            <summary>
+            Sitema refere-se ao chamador da API
+            </summary>
+            <example>Sentinella</example>
+        </member>
+        <member name="M:sheduler_backend.Controllers.HealthController.Health">
+            <summary>
+            Verifica status da API
+            </summary>
+            <remarks>
+            Metodo para verificar o status da API
+            Autenticação não obrigatória
+            </remarks>
+            <returns>Retornará "Hello API!", caso o esteja tudo OK</returns>
+        </member>
+    </members>
+</doc>

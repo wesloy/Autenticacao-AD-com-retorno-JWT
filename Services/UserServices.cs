@@ -38,7 +38,7 @@ namespace SI_MicroServicos.Services
                     Password = "Active Directory Auth",
                     Type = UserType.NormalUser,
                     Username = userIn.User,
-                    Email = userIn.User + "@algartech.com",
+                    Email = userIn.User + "@dominio.com",
                     Sistema = userIn.Sistema
                 };
                 dbContext.Users.Add(userX);
@@ -60,8 +60,8 @@ namespace SI_MicroServicos.Services
             {
                 using (var conn = new LdapConnection())
                 {
-                    conn.Connect("acs.com.br", 389);
-                    conn.Bind(LdapConnection.LdapV3, $"ACS\\{username}", password);
+                    conn.Connect("dominio.com.br", 389);
+                    conn.Bind(LdapConnection.LdapV3, $"DOMINIO\\{username}", password);
                 }
                 return true;
             }
